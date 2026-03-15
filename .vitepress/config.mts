@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: "/freyrsgarten/",
+  base: "/Freyrsgarten/",
   title: "Freyrsgarten",
   description: "Digital garden made by enthusiast for enthusiasts",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/freyrsgarten' },
+      { text: 'Home', link: '/' },
     ],
 
     sidebar: [
@@ -23,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/eisenprogrammierer/Freyrsgarten' }
     ]
   }
 })

@@ -27,7 +27,7 @@ export default defineConfig({
     ]
   },
   markdown: {
-    config: (md)=ck {
+    config: (md) => {
       md.use(wikilinks, {
         baseUrl: '/Freyrsgarten',
         linkify: true

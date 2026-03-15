@@ -11,20 +11,20 @@ export default defineConfig({
   cleanUrls: true,
 
   markdown: {
-  config: (md) => {
-    md.use(wikilinks({
-      baseURL: '/Freyrsgarten/',
-      makeAllLinksAbsolute: true,
-      uriSuffix: '',
-      postProcessPageName: (name) =>
-        name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-    }))
+    config: (md) => {
+      md.use(wikilinks({
+        baseURL: '/Freyrsgarten/',
+        makeAllLinksAbsolute: true,
+        uriSuffix: '',
+        postProcessPageName: (name) =>
+          name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+      }))
 
-    md.use(katex, { throwOnError: false, strict: false })
+      md.use(katex, { throwOnError: false, strict: false })
 
-    md.use(require('./plugins/vitepress-mermaid').mermaidPlugin)
-  }
-}
+      md.use(require('./plugins/vitepress-mermaid').mermaidPlugin)
+    }
+  },
 
   themeConfig: {
     nav: [
@@ -35,8 +35,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Заметки',
-        items: [
-        ]
+        items: []
       }
     ],
 

@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: "/freyrsgarten/"
+  base: "/freyrsgarten/",
   title: "Freyrsgarten",
   description: "Digital garden made by enthusiast for enthusiasts",
   themeConfig: {

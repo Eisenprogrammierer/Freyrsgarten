@@ -10,6 +10,7 @@
     "markdown-it-katex": "^2.0.3",
     "markdown-it-wikilinks": "^1.4.0",
     "mermaid": "^11.13.0",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vitepress-sidebar": "^1.33.1"
   }
 }

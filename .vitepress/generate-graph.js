@@ -2,7 +2,13 @@ const fs = require('fs')
 const path = require('path')
 
 const docsDir = './docs'
-const outFile = './.vitepress/dist/graph-data.json'
+const distDir = './.vitepress/dist'
+const outFile = path.join(distDir, 'graph-data.json')
+
+if (!fs.existsSync(distDir)) {
+  fs.mkdirSync(distDir, { recursive: true })
+  console.log(`Создана папка ${distDir}`)
+}
 
 const nodes = []
 const edges = new Set()
@@ -18,7 +24,10 @@ function scan(dir) {
     if (!entry.name.endsWith('.md')) continue
 
     const rel = path.relative(docsDir, full).replace(/\.md$/, '')
-    const id = rel.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-/]/g, '')
+    const id = rel
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-/]/g, '')
 
     nodes.push({
       data: {
@@ -30,8 +39,12 @@ function scan(dir) {
     const content = fs.readFileSync(full, 'utf-8')
     const matches = content.matchAll(/\[\[(.+?)(?:\|[^[\]]+)?\]\]/g)
     for (const match of matches) {
-      let target = match[1].trim().toLowerCase().replace(/\s+/g, '-')
-      if (target) {
+      let target = match[1].trim()
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-/]/g, '')
+
+      if (target && target !== id) { 
         edges.add(JSON.stringify({ source: id, target }))
       }
     }
@@ -42,5 +55,7 @@ scan(docsDir)
 
 const edgeArray = Array.from(edges).map(JSON.parse)
 
-fs.writeFileSync(outFile, JSON.stringify({ nodes, edges: edgeArray }, null, 2))
-console.log(`Сгенерировано ${nodes.length} узлов и ${edgeArray.length} связей`)
+const data = { nodes, edges: edgeArray }
+fs.writeFileSync(outFile, JSON.stringify(data, null, 2))
+
+console.log(`Сгенерировано ${nodes.length} узлов и ${edgeArray.length} рёбер → ${outFile}`)

@@ -1,37 +1,30 @@
 import { defineConfig } from 'vitepress'
+import wikilinks from 'markdown-it-wikilinks'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
   base: "/Freyrsgarten/",
   title: "Freyrsgarten",
   description: "Digital garden made by enthusiast for enthusiasts",
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/eisenprogrammierer/Freyrsgarten' }
-    ]
+    nav: [{ text: 'Home', link: '/' }],
+    sidebar: [ /* твои items */ ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Eisenprogrammierer/Freyrsgarten' }]
   },
+
   markdown: {
     config: (md) => {
-      md.use(wikilinks, {
-        baseUrl: '/Freyrsgarten',
-        linkify: true
-      })
+      md.use(
+        wikilinks({
+          baseURL: '/Freyrsgarten/',
+          makeAllLinksAbsolute: true,
+          uriSuffix: '',
+          postProcessPageName: (name) => {
+            return name.trim().toLowerCase().replace(/\s+/g, '-')
+          }
+        })
+      )
     }
   }
 })

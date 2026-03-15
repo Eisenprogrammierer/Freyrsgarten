@@ -173,9 +173,13 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false
+      "bases:Создать новую базу": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "1d54ae7dd4954584",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "graph.md~",
+    "graph.md"
+  ]
 }

@@ -25,5 +25,13 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/eisenprogrammierer/Freyrsgarten' }
     ]
+  },
+  markdown: {
+    config: (md)=ck {
+      md.use(wikilinks, {
+        baseUrl: '/Freyrsgarten',
+        linkify: true
+      })
+    }
   }
 })

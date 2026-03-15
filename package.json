@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "markdown-it-wikilinks": "^1.4.0",
     "vitepress": "^1.6.4"
   }
 }

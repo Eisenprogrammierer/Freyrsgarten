@@ -8,6 +8,7 @@ export default defineConfig({
   base: '/Freyrsgarten/',
   title: 'Freyrsgarten',
   description: 'Digital garden made by enthusiast for enthusiasts',
+
   cleanUrls: true,
 
   markdown: {
@@ -19,7 +20,9 @@ export default defineConfig({
         postProcessPageName: (name) =>
           name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
       }))
+
       md.use(katex, { throwOnError: false, strict: false })
+
       md.use(require('./plugins/vitepress-mermaid').mermaidPlugin)
     }
   },
@@ -40,12 +43,15 @@ export default defineConfig({
       sortFolderFirst: true,
       includeEmptyFolder: false,
       hyphenToSpace: true,
-      capitalizeFirst: true
+      capitalizeFirst: true,
+      excludePattern: [],
+      includeRootIndexFile: true
     }),
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Eisenprogrammierer/Freyrsgarten' }
     ],
+
     outline: 'deep'
   }
 })

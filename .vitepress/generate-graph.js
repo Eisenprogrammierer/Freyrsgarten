@@ -3,15 +3,17 @@ const path = require('path')
 
 const docsDir = './docs'
 const distDir = './.vitepress/dist'
-const outFile = path.join(distDir, 'graph-data.json')
+const graphOut = path.join(distDir, 'graph-data.json')
+const backlinksOut = path.join(distDir, 'backlinks.json')
 
+// Создаём dist, если нет
 if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true })
-  console.log(`Создана папка ${distDir}`)
 }
 
 const nodes = []
 const edges = new Set()
+const backlinksMap = {}
 
 function scan(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true })
@@ -24,17 +26,10 @@ function scan(dir) {
     if (!entry.name.endsWith('.md')) continue
 
     const rel = path.relative(docsDir, full).replace(/\.md$/, '')
-    const id = rel
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^a-z0-9-/]/g, '')
+    const id = rel.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-/]/g, '')
 
-    nodes.push({
-      data: {
-        id,
-        label: rel || 'Home'
-      }
-    })
+    nodes.push({ data: { id, label: rel || 'Home' } })
+    backlinksMap[id] = []
 
     const content = fs.readFileSync(full, 'utf-8')
     const matches = content.matchAll(/\[\[(.+?)(?:\|[^[\]]+)?\]\]/g)
@@ -44,8 +39,9 @@ function scan(dir) {
         .replace(/\s+/g, '-')
         .replace(/[^a-z0-9-/]/g, '')
 
-      if (target && target !== id) { 
+      if (target && target !== id) {
         edges.add(JSON.stringify({ source: id, target }))
+        backlinksMap[id].push(target)
       }
     }
   }
@@ -55,7 +51,8 @@ scan(docsDir)
 
 const edgeArray = Array.from(edges).map(JSON.parse)
 
-const data = { nodes, edges: edgeArray }
-fs.writeFileSync(outFile, JSON.stringify(data, null, 2))
+fs.writeFileSync(graphOut, JSON.stringify({ nodes, edges: edgeArray }, null, 2))
+fs.writeFileSync(backlinksOut, JSON.stringify(backlinksMap, null, 2))
 
-console.log(`Сгенерировано ${nodes.length} узлов и ${edgeArray.length} рёбер → ${outFile}`)
+console.log(`Граф: ${nodes.length} узлов, ${edgeArray.length} связей`)
+console.log(`Backlinks: для ${Object.keys(backlinksMap).length} страниц`)

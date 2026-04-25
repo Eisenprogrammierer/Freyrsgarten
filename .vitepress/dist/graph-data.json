@@ -2,18 +2,6 @@
   "nodes": [
     {
       "data": {
-        "id": "test1/test",
-        "label": "Test1/test"
-      }
-    },
-    {
-      "data": {
-        "id": "test2/test",
-        "label": "Test2/test"
-      }
-    },
-    {
-      "data": {
         "id": "graph",
         "label": "graph"
       }
@@ -26,13 +14,6 @@
     }
   ],
   "edges": [
-    {
-      "source": "test1/test",
-      "target": "test2/test"
-    },
-    {
-      "source": "test2/test",
-      "target": "test1/test"
-    }
+
   ]
 }

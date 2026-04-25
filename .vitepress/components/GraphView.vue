@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import cytoscape from 'cytoscape'
 
-import graphRaw from '../../.vitepress/dist/graph-data.json?raw'
+import graphRaw from '../../.vitepress/dist/graph-data.json'
 
 onMounted(() => {
   try {

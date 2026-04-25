@@ -2,7 +2,7 @@
 import { useData } from 'vitepress'
 import { ref, onMounted } from 'vue'
 
-import backlinksRaw from '../../.vitepress/dist/backlinks.json?raw'
+import backlinksRaw from '../../.vitepress/dist/backlinks.json'
 
 const { page } = useData()
 const backlinks = ref([])

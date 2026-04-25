@@ -22,7 +22,6 @@ export default defineConfig({
       }))
 
       md.use(katex, { throwOnError: false, strict: false })
-
       md.use(require('./plugins/vitepress-mermaid').mermaidPlugin)
     }
   },

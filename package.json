@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "docs:dev": "node .vitepress/generate-graph.js && vitepress dev",
     "docs:build": "node .vitepress/generate-graph.js && vitepress build",
     "docs:preview": "vitepress preview"
   },

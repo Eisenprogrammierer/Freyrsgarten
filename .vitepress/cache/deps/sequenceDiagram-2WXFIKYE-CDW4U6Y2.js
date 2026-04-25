@@ -2,10 +2,6 @@ import {
   ImperativeState
 } from "./chunk-IGUWJGCD.js";
 import {
-  JSON_SCHEMA,
-  load
-} from "./chunk-P7HYNWP2.js";
-import {
   drawBackgroundRect,
   drawEmbeddedImage,
   drawImage,
@@ -13,6 +9,10 @@ import {
   getNoteRect,
   getTextObj
 } from "./chunk-5KFXE4QL.js";
+import {
+  JSON_SCHEMA,
+  load
+} from "./chunk-P7HYNWP2.js";
 import {
   ZERO_WIDTH_SPACE,
   parseFontSize,
@@ -4430,4 +4430,4 @@ var diagram = {
 export {
   diagram
 };
-//# sourceMappingURL=sequenceDiagram-2WXFIKYE-U7OYJLP2.js.map
+//# sourceMappingURL=sequenceDiagram-2WXFIKYE-CDW4U6Y2.js.map

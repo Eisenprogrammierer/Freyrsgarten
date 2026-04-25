@@ -45,12 +45,12 @@ var registerDefaultLayoutLoaders = __name(() => {
   registerLayoutLoaders([
     {
       name: "dagre",
-      loader: __name(async () => await import("./dagre-KLK3FWXG-SGN66GIB.js"), "loader")
+      loader: __name(async () => await import("./dagre-KLK3FWXG-SZD7CDAK.js"), "loader")
     },
     ...true ? [
       {
         name: "cose-bilkent",
-        loader: __name(async () => await import("./cose-bilkent-S5V4N54A-24YKTFZT.js"), "loader")
+        loader: __name(async () => await import("./cose-bilkent-S5V4N54A-772F23C6.js"), "loader")
       }
     ] : []
   ]);
@@ -82,4 +82,4 @@ export {
   render,
   getRegisteredLayoutAlgorithm
 };
-//# sourceMappingURL=chunk-W6V7Q5PD.js.map
+//# sourceMappingURL=chunk-IPAA727E.js.map

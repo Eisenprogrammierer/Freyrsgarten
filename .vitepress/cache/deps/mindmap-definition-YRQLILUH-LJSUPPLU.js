@@ -7,7 +7,7 @@ import {
 import {
   getRegisteredLayoutAlgorithm,
   render
-} from "./chunk-W6V7Q5PD.js";
+} from "./chunk-IPAA727E.js";
 import "./chunk-BHCIM7YD.js";
 import "./chunk-RPJLHAAT.js";
 import "./chunk-RVPOHE44.js";
@@ -1491,4 +1491,4 @@ var diagram = {
 export {
   diagram
 };
-//# sourceMappingURL=mindmap-definition-YRQLILUH-MTZQOUTW.js.map
+//# sourceMappingURL=mindmap-definition-YRQLILUH-LJSUPPLU.js.map

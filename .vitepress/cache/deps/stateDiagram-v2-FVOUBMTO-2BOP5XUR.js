@@ -1,13 +1,12 @@
 import {
-  ClassDB,
-  classDiagram_default,
-  classRenderer_v3_unified_default,
+  StateDB,
+  stateDiagram_default,
+  stateRenderer_v3_unified_default,
   styles_default
-} from "./chunk-HGBHFCLK.js";
-import "./chunk-RKSX4CNH.js";
+} from "./chunk-2MOH5FR2.js";
 import "./chunk-LZJX3QMJ.js";
 import "./chunk-4AL7ZOPK.js";
-import "./chunk-W6V7Q5PD.js";
+import "./chunk-IPAA727E.js";
 import "./chunk-BHCIM7YD.js";
 import "./chunk-RPJLHAAT.js";
 import "./chunk-RVPOHE44.js";
@@ -15,7 +14,6 @@ import "./chunk-FCYDLDSL.js";
 import "./chunk-OVRZWZ7I.js";
 import "./chunk-GB36WENI.js";
 import "./chunk-RZIZBPBT.js";
-import "./chunk-5KFXE4QL.js";
 import "./chunk-5PHFVG6W.js";
 import "./chunk-B3OUXUOJ.js";
 import "./chunk-H4ZG5SHA.js";
@@ -25,22 +23,22 @@ import {
 } from "./chunk-WT6GZSWG.js";
 import "./chunk-FOQIPI7F.js";
 
-// node_modules/mermaid/dist/chunks/mermaid.core/classDiagram-VBA2DB6C.mjs
+// node_modules/mermaid/dist/chunks/mermaid.core/stateDiagram-v2-FVOUBMTO.mjs
 var diagram = {
-  parser: classDiagram_default,
+  parser: stateDiagram_default,
   get db() {
-    return new ClassDB();
+    return new StateDB(2);
   },
-  renderer: classRenderer_v3_unified_default,
+  renderer: stateRenderer_v3_unified_default,
   styles: styles_default,
   init: __name((cnf) => {
-    if (!cnf.class) {
-      cnf.class = {};
+    if (!cnf.state) {
+      cnf.state = {};
     }
-    cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
+    cnf.state.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
   }, "init")
 };
 export {
   diagram
 };
-//# sourceMappingURL=classDiagram-VBA2DB6C-LPQPQRG2.js.map
+//# sourceMappingURL=stateDiagram-v2-FVOUBMTO-2BOP5XUR.js.map

@@ -3,7 +3,8 @@ import {
 } from "./chunk-5KVADSKT.js";
 import {
   parse
-} from "./chunk-JRYNFO4E.js";
+} from "./chunk-WYBRMNLJ.js";
+import "./chunk-5KFTRDEJ.js";
 import "./chunk-3WUFVVE4.js";
 import {
   setupViewPortForSVG
@@ -13,7 +14,6 @@ import "./chunk-QGCFLVYL.js";
 import "./chunk-6IFZFQE4.js";
 import "./chunk-BAJ4MITQ.js";
 import "./chunk-6MQUHXBV.js";
-import "./chunk-5KFTRDEJ.js";
 import "./chunk-LNJL4LJM.js";
 import {
   selectSvgElement
@@ -23,7 +23,6 @@ import {
   isLabelStyle,
   styles2String
 } from "./chunk-RVPOHE44.js";
-import "./chunk-NBWFZMTS.js";
 import {
   cleanAndMerge
 } from "./chunk-5PHFVG6W.js";
@@ -40,6 +39,7 @@ import {
   setAccTitle,
   setDiagramTitle
 } from "./chunk-H4ZG5SHA.js";
+import "./chunk-NBWFZMTS.js";
 import "./chunk-ST3SR5TB.js";
 import {
   __name,
@@ -569,4 +569,4 @@ var diagram = {
 export {
   diagram
 };
-//# sourceMappingURL=diagram-E7M64L7V-PZKNFKRC.js.map
+//# sourceMappingURL=diagram-E7M64L7V-QB6VC6SH.js.map

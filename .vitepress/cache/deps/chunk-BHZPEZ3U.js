@@ -2,6 +2,9 @@ import {
   getIconStyles
 } from "./chunk-RKSX4CNH.js";
 import {
+  createTooltip
+} from "./chunk-5KFXE4QL.js";
+import {
   getDiagramElement
 } from "./chunk-LZJX3QMJ.js";
 import {
@@ -10,10 +13,7 @@ import {
 import {
   getRegisteredLayoutAlgorithm,
   render
-} from "./chunk-W6V7Q5PD.js";
-import {
-  createTooltip
-} from "./chunk-5KFXE4QL.js";
+} from "./chunk-IPAA727E.js";
 import {
   getEdgeId,
   utils_default
@@ -1999,4 +1999,4 @@ export {
   styles_default,
   classRenderer_v3_unified_default
 };
-//# sourceMappingURL=chunk-HGBHFCLK.js.map
+//# sourceMappingURL=chunk-BHZPEZ3U.js.map

@@ -2,14 +2,19 @@
 import { onMounted } from 'vue'
 import cytoscape from 'cytoscape'
 
-onMounted(async () => {
+import graphRaw from '../../.vitepress/dist/graph-data.json?raw'
+
+onMounted(() => {
   try {
-    const res = await fetch('/Freyrsgarten/graph-data.json')
-    const { nodes, edges } = await res.json()
+    const data = JSON.parse(graphRaw)
+    const elements = [
+      ...data.nodes,
+      ...data.edges.map(e => ({ data: e }))
+    ]
 
     cytoscape({
       container: document.getElementById('cy'),
-      elements: [...nodes, ...edges],
+      elements: elements,
       style: [
         {
           selector: 'node',
@@ -18,7 +23,9 @@ onMounted(async () => {
             'label': 'data(label)',
             'color': '#fff',
             'text-valign': 'center',
-            'font-size': '12px'
+            'font-size': '12px',
+            'width': 40,
+            'height': 40
           }
         },
         {
@@ -32,7 +39,7 @@ onMounted(async () => {
           }
         }
       ],
-      layout: { name: 'cose', animate: false }
+      layout: { name: 'cose', animate: true }
     })
   } catch (e) {
     console.error('Не удалось загрузить граф', e)

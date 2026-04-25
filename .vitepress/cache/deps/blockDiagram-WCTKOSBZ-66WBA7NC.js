@@ -18,7 +18,6 @@ import {
 import {
   createText
 } from "./chunk-RZIZBPBT.js";
-import "./chunk-NBWFZMTS.js";
 import {
   decodeEntities,
   getStylesFromArray,
@@ -37,6 +36,7 @@ import {
   rgba_default,
   sanitizeText
 } from "./chunk-H4ZG5SHA.js";
+import "./chunk-NBWFZMTS.js";
 import "./chunk-ST3SR5TB.js";
 import {
   __name,
@@ -3767,4 +3767,4 @@ var diagram = {
 export {
   diagram
 };
-//# sourceMappingURL=blockDiagram-WCTKOSBZ-XCP73FBH.js.map
+//# sourceMappingURL=blockDiagram-WCTKOSBZ-66WBA7NC.js.map

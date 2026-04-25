@@ -11,10 +11,14 @@
             "id": "1d54ae7dd4954584",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "graph.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "graph"
             }
           }
         ]
@@ -157,13 +161,23 @@
               "icon": "lucide-list",
               "title": "Структура"
             }
+          },
+          {
+            "id": "63bd25c66817e0c4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,13 +193,19 @@
   },
   "active": "1d54ae7dd4954584",
   "lastOpenFiles": [
+    "index.md",
+    "DE/Projekte",
+    "DE/Persönlich",
+    "DE/Studien",
+    "EN/Projects",
+    "EN/Personal",
+    "EN/Studies",
+    "RU/Личное",
+    "RU/Проекты",
+    "RU/Учёба",
+    "DE",
+    "graph.md",
     "Test2/test.md",
-    "Test1/test.md",
-    "Test2/test",
-    "Test1/test",
-    "Test2",
-    "Test1",
-    "graph.md~",
-    "graph.md"
+    "Test1/test.md"
   ]
 }

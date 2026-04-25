@@ -2,9 +2,9 @@ const fs = require('fs')
 const path = require('path')
 
 const docsDir = './docs'
-const distDir = './.vitepress/dist'
+const outDir = './.vitepress'
 
-if (!fs.existsSync(distDir)) fs.mkdirSync(distDir, { recursive: true })
+if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
 
 const nodes = []
 const edges = new Set()
@@ -41,7 +41,8 @@ scan(docsDir)
 
 const edgeArray = Array.from(edges).map(JSON.parse)
 
-fs.writeFileSync(path.join(distDir, 'graph-data.json'), JSON.stringify({ nodes, edges: edgeArray }, null, 2))
-fs.writeFileSync(path.join(distDir, 'backlinks.json'), JSON.stringify(backlinks, null, 2))
+
+fs.writeFileSync(path.join(outDir, 'graph-data.json'), JSON.stringify({ nodes, edges: edgeArray }, null, 2))
+fs.writeFileSync(path.join(outDir, 'backlinks.json'), JSON.stringify(backlinks, null, 2))
 
 console.log(`Готово: ${nodes.length} заметок, ${edgeArray.length} связей`)

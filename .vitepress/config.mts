@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import wikilinks from 'markdown-it-wikilinks'
-import katex from 'markdown-it-katex'
 import { generateSidebar } from 'vitepress-sidebar'
 
 export default defineConfig({
@@ -12,6 +11,8 @@ export default defineConfig({
   cleanUrls: true,
 
   markdown: {
+    math: true,
+
     config: (md) => {
       md.use(wikilinks({
         baseURL: '/Freyrsgarten/',
@@ -21,7 +22,6 @@ export default defineConfig({
           name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
       }))
 
-      md.use(katex, { throwOnError: false, strict: false })
       md.use(require('./plugins/vitepress-mermaid').mermaidPlugin)
     }
   },

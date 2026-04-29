@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "ru//---",
+        "label": "RU/Проекты/Стратегия работы с информацией"
+      }
+    },
+    {
+      "data": {
+        "id": "graph",
+        "label": "graph"
+      }
+    },
+    {
+      "data": {
+        "id": "index",
+        "label": "index"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "ru//---",
+      "target": "1"
+    }
+  ]
+}

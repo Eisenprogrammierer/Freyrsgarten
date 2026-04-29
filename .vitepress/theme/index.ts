@@ -2,7 +2,6 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import Backlinks from '../components/Backlinks.vue'
 import VitePressMermaid from '../plugins/vitepress-mermaid/index.vue'
-import 'katex/dist/katex.min.css'
 import GraphView from '../components/GraphView.vue'
 
 export default {

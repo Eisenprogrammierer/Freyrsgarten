@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "RU/Проекты/Стратегия работы с информацией.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Стратегия работы с информацией"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "e5c499ec92f5aef7",
@@ -177,7 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,8 +193,9 @@
   },
   "active": "1d54ae7dd4954584",
   "lastOpenFiles": [
-    "graph.md",
     "index.md",
+    "RU/Проекты/Стратегия работы с информацией.md",
+    "graph.md",
     "DE/Projekte",
     "DE/Persönlich",
     "DE/Studien",

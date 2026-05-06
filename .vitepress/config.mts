@@ -28,8 +28,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Граф', link: '/graph' }
+      { text: 'Home', link: '/' }
     ],
 
     sidebar: generateSidebar({

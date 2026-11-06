@@ -34,9 +34,47 @@
               "icon": "lucide-file",
               "title": "ONBOARDING"
             }
+          },
+          {
+            "id": "4ee532673748809a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/SOURCE_OF_TRUTH.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SOURCE_OF_TRUTH"
+            }
+          },
+          {
+            "id": "54d729f2419745fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/WORLD_CORE_MODEL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WORLD_CORE_MODEL"
+            }
+          },
+          {
+            "id": "652f10fbfe5a86ce",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -208,8 +246,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4de0181cd3dca3d9",
+  "active": "652f10fbfe5a86ce",
   "lastOpenFiles": [
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/ONBOARDING.md",
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/WORLD_CORE_MODEL.md",
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/SOURCE_OF_TRUTH.md",
     "file:/home/eisenprogrammierer/numpy_raw.md",
     "RU/Проекты/Проект стратегической игры/Наработки/Механика ресурсов и предприятий.md",
     "RU/Проекты/Проект стратегической игры/Наработки/Спецификация на JSON-конфиги.md",
@@ -241,13 +282,10 @@
     "минимальный веполь.drawio.svg",
     "RU/Проекты/Проект стратегической игры/Наработки",
     "RU/Проекты/Стратегия работы с информацией.md",
-    "RU/Проекты/Система фильтрации знаний.md",
-    "RU/Проекты/Многомерная таксономия инструментов для работы с информацией.md",
     "RU/Проекты/Проект стратегической игры/Для добровольцев",
     "RU/Проекты/Проект стратегической игры/Технические задания",
     "RU/Проекты/Проект стратегической игры/Производственные планы",
     "RU/Проекты/Проект стратегической игры",
-    "6.md",
     "DE/Projekte"
   ]
 }

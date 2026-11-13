@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "652f10fbfe5a86ce",
+            "id": "45614399b1104792",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/WORLD_CORE_MODEL.md",
+                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/DIALOGUE_NLG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WORLD_CORE_MODEL"
+              "title": "DIALOGUE_NLG"
             }
           },
           {
-            "id": "0e83ea0f2151acfd",
+            "id": "1cf154fe82809772",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/DATA_DRIVEN_CORE_PLAN.md",
+                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/DIALOGUE_NLG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DATA_DRIVEN_CORE_PLAN"
+              "title": "DIALOGUE_NLG"
             }
           }
         ],
@@ -208,8 +208,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e83ea0f2151acfd",
+  "active": "1cf154fe82809772",
   "lastOpenFiles": [
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/DIALOGUE_NLG.md",
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/CHAT_STYLES_PLAN.md",
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/SESSION_SUMMARY.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/SOURCE_OF_TRUTH.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/WORLD_CORE_MODEL.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/ONBOARDING.md",
@@ -235,15 +238,12 @@
     "От матрицы Лесли до цифровых двойников_ практические математические модели для стратегического планирования социа.pdf",
     "RU/Личное/Заметки по проектам/Заметки по стратегии/Соображения по трубопроводу (pipeline) расчётов.md",
     "RU/Личное/Заметки по проектам/Заметки по стратегии/Анализ моделей.md",
-    "RU/Личное/Заметки по проектам/Заметки по стратегии/Некоторые соображения по итогам 4 недель разработки.md",
-    "index.md",
     "RU/Личное/Заметки по проектам/Заметки по стратегии",
     "RU/Личное/Заметки по проектам",
     "двойной протокол.drawio.svg",
     "единый протокол.drawio.svg",
     "минимальный веполь.drawio.svg",
     "RU/Проекты/Проект стратегической игры/Наработки",
-    "RU/Проекты/Стратегия работы с информацией.md",
     "RU/Проекты/Проект стратегической игры/Для добровольцев",
     "RU/Проекты/Проект стратегической игры/Технические задания",
     "RU/Проекты/Проект стратегической игры/Производственные планы",

@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4c71dc3b4873196a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
             "id": "0cc93c65b965a157",
             "type": "leaf",
             "state": {
@@ -36,21 +22,21 @@
             }
           },
           {
-            "id": "9221103008e948bc",
+            "id": "91d0fa6532bdb3ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/TODO.md",
+                "file": "file:/home/eisenprogrammierer/Ozvering-Project/docs/SOURCE_OF_TRUTH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "SOURCE_OF_TRUTH"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9221103008e948bc",
+  "active": "91d0fa6532bdb3ae",
   "lastOpenFiles": [
+    "file:/home/eisenprogrammierer/Ozvering-Project/docs/TODO.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/CHARACTER_ACTION_FLEXIBILITY_GAP.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/DIALOGUE_NLG.md",
     "file:/home/eisenprogrammierer/Ozvering-Project/docs/DATA_DRIVEN_CORE_PLAN.md",
@@ -250,7 +237,6 @@
     "RU/Проекты/Проект стратегической игры/Наработки/Некоторые соображения по архитектуре.md",
     "RU/Проекты/Проект стратегической игры/Наработки/Двухуровневая система вычислений.md",
     "RU/Проекты/Проект стратегической игры/Наработки/Базовые состояния.md",
-    "RU/Личное/Заметки по проектам/Заметки по стратегии/Базовые функции в моделях.md",
     "От матрицы Лесли до цифровых двойников_ практические математические модели для стратегического планирования социа.pdf",
     "RU/Личное/Заметки по проектам/Заметки по стратегии",
     "RU/Личное/Заметки по проектам",
